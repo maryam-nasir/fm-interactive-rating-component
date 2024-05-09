@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/maryam-nasir/fm-interactive-rating-component](https://github.com/maryam-nasir/fm-interactive-rating-component)
-- Live Site URL: []()
+- Live Site URL: [https://fm-interactive-rating-component-brown.vercel.app/](https://fm-interactive-rating-component-brown.vercel.app/)
 
 ## My process
 
