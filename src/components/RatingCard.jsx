@@ -3,7 +3,7 @@ import RatingButton from "./RatingButton";
 
 const RatingCard = ({ selectedRating, onRatingSelect, onSubmit }) => {
   return (
-    <div className="flex flex-col p-7">
+    <div className="flex flex-col p-8">
       <div className="w-12 h-12 bg-darkBlue flex items-center justify-center rounded-full">
         <img src={starIcon} alt="Star icon" />
       </div>
