@@ -8,7 +8,7 @@ const RatingCard = ({ selectedRating, onRatingSelect, onSubmit }) => {
         <img src={starIcon} alt="Star icon" />
       </div>
 
-      <h1 className="text-white text-[26px] font-medium mt-8 mb-2">
+      <h1 className="text-white text-3xl font-medium mt-8 mb-2">
         How did we do?
       </h1>
 
