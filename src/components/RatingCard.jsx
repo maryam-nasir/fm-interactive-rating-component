@@ -1,7 +1,7 @@
 import starIcon from "../assets/icon-star.svg";
 import RatingButton from "./RatingButton";
 
-const RatingCard = ({ selectedRating, onRatingSelect, onSubmit }) => {
+const RatingCard = ({ selectedRating, error, onRatingSelect, onSubmit }) => {
   return (
     <div className="flex flex-col p-8">
       <div className="w-12 h-12 bg-darkBlue flex items-center justify-center rounded-full">
@@ -27,6 +27,8 @@ const RatingCard = ({ selectedRating, onRatingSelect, onSubmit }) => {
           />
         ))}
       </div>
+
+      {error && <p className="text-red-400 -mt-3 mb-3">{error.message}</p>}
 
       <button
         className="w-full bg-orange text-white uppercase tracking-wider rounded-full py-3 hover:text-orange hover:bg-white"

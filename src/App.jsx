@@ -5,12 +5,20 @@ import ThankYouCard from "./components/ThankYouCard";
 const App = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [rating, setRating] = useState(null);
+  const [error, setError] = useState(null);
 
   const handleRatingSelect = (selectedRating) => {
     setRating(selectedRating);
+    setError(null);
   };
 
   const handleSubmit = () => {
+    if (!rating) {
+      setError({
+        message: "Please select rating first before submitting.",
+      });
+      return;
+    }
     setFormSubmitted(true);
   };
 
@@ -21,6 +29,7 @@ const App = () => {
       ) : (
         <RatingCard
           selectedRating={rating}
+          error={error}
           onRatingSelect={handleRatingSelect}
           onSubmit={handleSubmit}
         />
